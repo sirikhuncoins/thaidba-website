@@ -1,4 +1,4 @@
-thaidba.org Website
+thaidba.org website
 ================
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
