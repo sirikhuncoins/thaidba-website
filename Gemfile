@@ -19,6 +19,7 @@ gem 'devise'
 gem 'high_voltage'
 gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
+gem 'country_select'
 group :development do
   gem 'better_errors'
   gem 'hub', :require=>nil
