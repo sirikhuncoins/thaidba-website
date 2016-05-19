@@ -20,8 +20,11 @@
     </div>
     <div class="form-group">
       <%= f.label :country %><br/>
+      <% disabled_options= ['---Select Country---', '-------------------------------------------------'] %>
       <%= f.select :country,
-      [["Select Country",""],
+      [["---Select Country---"],
+      ["Thailand","Thailand"],
+      ["-------------------------------------------------"],
       ["Afganistan","Afghanistan"],
       ["Albania","Albania"],
       ["Algeria","Algeria"],
@@ -240,7 +243,6 @@
       ["Taiwan","Taiwan"],
       ["Tajikistan","Tajikistan"],
       ["Tanzania","Tanzania"],
-      ["Thailand","Thailand"],
       ["Togo","Togo"],
       ["Tokelau","Tokelau"],
       ["Tonga","Tonga"],
@@ -268,7 +270,7 @@
       ["Yemen","Yemen"],
       ["Zaire","Zaire"],
       ["Zambia","Zambia"],
-      ["Zimbabwe","Zimbabwe"]], class: 'form-control' %>
+      ["Zimbabwe","Zimbabwe"]], :disabled => disabled_options,:selected => '---Select Country---', class: 'form-control'%>
     </div>
     <div class="form-group">
       <%= f.label :contact_number %>
