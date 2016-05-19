@@ -34,6 +34,21 @@
       <%= f.label :password_confirmation %>
       <%= f.password_field :password_confirmation, class: 'form-control' %>
     </div>
-     <%= f.submit 'Sign up', :class => 'button right' %>
+    <div class="form-group">
+          <%= check_box_tag 'terms',1,false,:onclick=>'handleClick(this);' %>
+          I have read and accept the terms of the TDBA's&nbsp;<%= link_to 'Membership Agreement', page_path('membership-agreement') %>
+    </div>
+    <%= f.submit 'Sign up', :class => 'button right', :id => "button" %>
   <% end %>
 </div>
+<script>
+  // button start off as disabled
+  document.getElementById("button").disabled=true;
+  function handleClick()
+  {
+   if(document.getElementById('terms').checked)
+    document.getElementById("button").disabled=false;
+   else
+    document.getElementById("button").disabled=true;
+  }
+</script>
