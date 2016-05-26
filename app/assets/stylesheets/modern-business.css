@@ -30,6 +30,60 @@ body {
     width: 74%;
 }
 
+#templatemo_features {
+    padding-bottom: 130px;
+}
+#templatemo_features p {
+    padding-bottom: 40px;
+    text-align: center;
+}
+#templatemo_features h3 {
+    text-align: center;
+    padding-bottom: 100px;
+    height: 50px;
+}
+#templatemo_features .feature-box {
+    transition: all .5s;
+    background: transparent;
+    padding: 40px 0 40px 0;
+    margin-bottom: 0px;
+    width: 222px;
+}
+#templatemo_features .feature-box:hover {
+    padding: 0;
+    color: #fff;
+}
+#templatemo_features .feature-box .feature-box-inner {
+    box-shadow: inset 0px 0px 0 10px #cecece;
+    border-bottom: 10px solid #cecece;
+    border-top: 10px solid #cecece;
+    transition: all .5s;
+    background: #fff;
+    padding: 20px;
+    margin: auto;
+}
+#templatemo_features .feature-box:hover .feature-box-inner {
+    box-shadow: inset 0px 0px 0px 0px #cecece;
+    border-bottom: 10px solid #3d799f;
+    border-top: 10px solid #3d799f;
+    padding: 60px 20px 60px 20px;
+    background: #3399cc;
+}
+#templatemo_features .feature-box p {
+    max-width: 250px;
+    min-height: 100px;
+    line-height: 32px;
+    padding-top: 30px;
+    font-size: 18px;
+    margin: auto;
+}
+#templatemo_features .feature-box .feature-box-icon {
+    border-radius: 0px;
+    text-align: center;
+    padding-top: 50px;
+    font-size: 56px;
+    color:#233842;
+}
 
 .img-portfolio {
     margin-bottom: 30px;
@@ -126,4 +180,42 @@ footer {
     div#two {
       width: 100%;
     }
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
