@@ -218,6 +218,7 @@ GEM
       sprockets-rails (>= 2.0, < 4.0)
 
 PLATFORMS
+  mingw32
   ruby
   x86-mingw32
 
