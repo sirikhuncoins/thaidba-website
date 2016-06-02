@@ -143,6 +143,18 @@ footer {
     margin: 50px 0;
 }
 
+.box{
+    display: none;
+    width: 100%;
+}
+
+a:hover + .box,.box:hover{
+    display: inline;
+    position: absolute;;
+    z-index: 100;
+}
+
+
 /* Responsive Styles */
 
 @media(max-width:991px) {
@@ -163,6 +175,12 @@ footer {
     }
     div#two {
         margin-left: 15%;
+    }
+
+    a:hover + .box,.box:hover{
+        display: block;
+        position: absolute;
+        z-index: 100;
     }
 }
 
@@ -218,14 +236,4 @@ footer {
     color: black;
     text-decoration: none;
     cursor: pointer;
-}
-.box{
-    display: none;
-    width: 100%;
-}
-
-a:hover + .box,.box:hover{
-    display: inline;
-    position: absolute;;
-    z-index: 100;
 }
