@@ -12,6 +12,18 @@ img {
   font-size: inherit;
 }
 
+td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+
+tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    border-collapse: collapse;
+}​
+
 // THESE ARE EXAMPLES YOU CAN MODIFY
 // create your own classes
 // to make views framework-neutral

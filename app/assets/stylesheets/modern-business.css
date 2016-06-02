@@ -150,7 +150,11 @@ footer {
 
 a:hover + .whitepaperBox,.whitepaperBox:hover{
     display: inline;
-    position: absolute;;
+    position: absolute;
+    width: 500px;
+    height: 250px;
+    overflow: auto;
+    background: #E8E8E8;
     z-index: 100;
 }
 
@@ -180,6 +184,10 @@ a:hover + .whitepaperBox,.whitepaperBox:hover{
     a:hover + .whitepaperBox,.whitepaperBox:hover{
         display: block;
         position: absolute;
+        width: auto;
+        height: 150px;
+        overflow: auto;
+        background: #E8E8E8;
         z-index: 100;
     }
 }
