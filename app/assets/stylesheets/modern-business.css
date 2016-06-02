@@ -143,12 +143,12 @@ footer {
     margin: 50px 0;
 }
 
-.box{
+.whitepaperBox{
     display: none;
     width: 100%;
 }
 
-a:hover + .box,.box:hover{
+a:hover + .whitepaperBox,.whitepaperBox:hover{
     display: inline;
     position: absolute;;
     z-index: 100;
@@ -177,7 +177,7 @@ a:hover + .box,.box:hover{
         margin-left: 15%;
     }
 
-    a:hover + .box,.box:hover{
+    a:hover + .whitepaperBox,.whitepaperBox:hover{
         display: block;
         position: absolute;
         z-index: 100;
