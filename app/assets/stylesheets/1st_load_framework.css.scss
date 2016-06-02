@@ -13,14 +13,16 @@ img {
 }
 
 td {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 
 
 tr {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid;
+    border-bottom-color: lightgray;
     border-top: 1px solid black;
+    border-top-color: lightgray;
     border-collapse: collapse;
 }​
 

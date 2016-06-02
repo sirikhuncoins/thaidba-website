@@ -151,8 +151,12 @@ footer {
 a:hover + .whitepaperBox,.whitepaperBox:hover{
     display: inline;
     position: absolute;
-    width: 500px;
-    height: 250px;
+    width: 450px;
+    height: 180px;
+    -moz-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
     overflow: auto;
     background: #E8E8E8;
     z-index: 100;
@@ -186,6 +190,7 @@ a:hover + .whitepaperBox,.whitepaperBox:hover{
         position: absolute;
         width: auto;
         height: 150px;
+        border: 120px;
         overflow: auto;
         background: #E8E8E8;
         z-index: 100;
