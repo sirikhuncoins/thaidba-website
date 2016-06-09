@@ -6,6 +6,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 gem 'tzinfo-data'
+gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'jbuilder', '~> 2.0'
 group :development, :test do
   gem 'byebug'
@@ -17,7 +18,6 @@ end
 gem 'bootstrap-sass'
 gem 'devise'
 gem 'high_voltage'
-gem 'simple_form'
 gem 'therubyracer', :platform=>:ruby
 gem 'country_select'
 group :development do

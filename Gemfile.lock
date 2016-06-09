@@ -243,7 +243,7 @@ DEPENDENCIES
   rails_layout
   rubocop
   sass-rails (~> 5.0)
-  simple_form
+  simple_form (~> 3.2, >= 3.2.1)
   spring
   sqlite3
   therubyracer

@@ -1,0 +1,17 @@
+<tr>
+  <td>
+    <h5> <b><%= comment.user.name %> ( <%= comment.user.email%> )</b>
+    <font color="gray"><i><small> Published <%= time_ago_in_words(comment.created_at) %></small></i></font>
+    </h5>
+    <div class="comment">
+
+      <p><%= comment.comment %></p>
+
+      <% if user_signed_in? && current_user.id == comment.user.id %>
+        <%= link_to '<i class="fa fa-pencil-square-o"></i> Edit'.html_safe, edit_post_comment_path(comment.post, comment)%>
+         | 
+        <%= link_to '<i class="fa fa-trash"></i> Delete'.html_safe, [comment.post, comment], method: :delete, data: {confirm: "Are you sure?"}%>
+      <% end %>
+    </div>
+  </td>
+</tr>

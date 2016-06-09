@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+          <h2 class="page-header">Welcome to TDBA's Forum
+              <br/>
+              <small>A forum for discussion of anything related to the association</small>
+          </h2>
+      </div>
+  </div>
+
+  <table class="rules">
+    <thead>
+      <tr>
+        <th>
+
+        </th>
+        <th>
+
+        </th>
+        <th class="date">
+
+        </th>
+        <th class="last" align="right">
+          <div id="buttons">
+            <% if user_signed_in? %>
+              <%= link_to "New Post", new_post_path %>
+            <% else %>
+               <font size="2" color="white">Sign in to Post on forum</font>
+            <% end %>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+
+      <% @posts.each do |post| %>
+        <tr class="record">
+          <td class="overflow">
+            <h4><%= link_to post.title, post %></h4>
+          </td>
+          <td class="overflow">
+            created by: <%= post.user.email  %>
+          </td>
+          <td class="date">
+            Published <%= time_ago_in_words(post.created_at) %> ago
+          </td>
+          <td class="last">
+            <%= post.comments.count %> replies
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="7"></td>
+      </tr>
+    </tfoot>
+  </table>
+</div>

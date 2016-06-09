@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="row">
+      <div class="col-sm-12">
+        <h1>Edit reply</h1>
+
+        <%= simple_form_for([@post, @comment]) do |f| %>
+          <%= f.input :comment, :required => true %>
+          <%= f.submit %>
+        <% end %>
+        <br/>
+        <%= link_to "Cancel", post_path(@post) %>
+    </div>
+  </div>
+</div>
