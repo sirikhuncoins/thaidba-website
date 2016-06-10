@@ -16,7 +16,7 @@
             <% if user_signed_in? %>
               <%= link_to "<font color='white'>New Post</font>".html_safe, new_post_path %>
             <% else %>
-               <font size="2" color="white">Sign in to Post on forum</font>
+              <%= link_to "<font size='2' color='white'>Sign in to Post on forum</font>".html_safe, new_user_session_path %>
             <% end %>
           </div>
         </th>
