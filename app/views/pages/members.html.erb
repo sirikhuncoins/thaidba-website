@@ -29,15 +29,13 @@
     <div class="row">
         <div class="col-lg-12">
             <h2 class="page-header">Networks of the Digital Economy <font size=3>(Individual Supporters)</font></h2>
-            <i class="fa fa-arrow-right" ></i> Chantika Chomchome
-            <br/><br/><i class="fa fa-arrow-right" ></i> Kawin Tiraborisute
-            <br/><br/><i class="fa fa-arrow-right" ></i> Sirikhun Triwittayakhun
-            <br/><br/><i class="fa fa-arrow-right" ></i> Preeda Boonyen
-            <br/><br/><i class="fa fa-arrow-right" ></i> Krisnu Supaporn
-            <br/><br/><i class="fa fa-arrow-right" ></i> Kanin Oungkananukij
-            <br/><br/><i class="fa fa-arrow-right" ></i> Yanisa Rasameekobkul
-            <br/><br/><i class="fa fa-arrow-right" ></i> Vatcharares Sritong
-            <br/><br/><i class="fa fa-arrow-right" ></i> Jira Khooomkam
+            <%
+              @users = User.all
+            %>
+            <% @users.each do |user| %>
+                <i class="fa fa-arrow-right" ></i><%= user.name %>
+                <br/><br/>
+            <% end %>
         </div>
     </div>
     <!-- /.row -->

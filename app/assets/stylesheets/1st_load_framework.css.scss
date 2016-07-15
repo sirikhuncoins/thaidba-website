@@ -89,6 +89,25 @@ section {
 #error_explanation h2 {
   font-size: 16px;
 }
+
+#header-name {
+  background-color: #333333;
+  color: white;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+#footer-box {
+  height: 10px;
+  background-color: lightgrey;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 .button-xs {
   @extend .btn;
   @extend .btn-primary;
