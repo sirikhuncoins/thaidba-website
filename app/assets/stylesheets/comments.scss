@@ -215,12 +215,25 @@
 
 #buttons {
   float:right;
+  border-radius: 10px;
+  display:inline-block;
+  font-style:normal;
+  font-weight:normal;
+  padding:2px 5px;
+  background: #4c91cd;
+
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+#buttons :hover{
+  float:right;
+  border-radius: 10px;
   display:inline-block;
   font-style:normal;
   font-weight:normal;
   padding:2px 5px;
   background: #337ab7;
-  box-shadow: 3px 3px 5px #888888;
 
   font-size: 16px;
   margin-right: 6px;
