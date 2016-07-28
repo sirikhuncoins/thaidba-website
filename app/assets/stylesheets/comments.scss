@@ -215,7 +215,7 @@
 
 #buttons {
   float:right;
-  border-radius: 10px;
+  border-radius: 5px;
   display:inline-block;
   font-style:normal;
   font-weight:normal;
@@ -227,14 +227,5 @@
 }
 
 #buttons :hover{
-  float:right;
-  border-radius: 10px;
-  display:inline-block;
-  font-style:normal;
-  font-weight:normal;
-  padding:2px 5px;
   background: #337ab7;
-
-  font-size: 16px;
-  margin-right: 6px;
 }
