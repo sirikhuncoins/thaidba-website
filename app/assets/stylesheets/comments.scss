@@ -215,13 +215,18 @@
 
 #buttons {
   float:right;
+  border-radius: 5px;
   display:inline-block;
   font-style:normal;
   font-weight:normal;
   padding:2px 5px;
-  background: #337ab7;
-  box-shadow: 3px 3px 5px #888888;
+  background: #4c91cd;
+  border-color: #2e6da4;
 
   font-size: 16px;
   margin-right: 6px;
+}
+
+#buttons :hover{
+  background: #337ab7;
 }
