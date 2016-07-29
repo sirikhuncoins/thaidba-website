@@ -12,13 +12,14 @@
     <thead>
       <tr>
         <th class="last" align="right" colspan="7">
-          <div id="buttons">
+          <button type="button" class="btn btn-primary">
             <% if user_signed_in? %>
               <%= link_to "<font color='white'>New Post</font>".html_safe, new_post_path %>
             <% else %>
-              <%= link_to "<font size='2' color='white'>Sign in to Post on forum</font>".html_safe, new_user_session_path %>
+              <%= link_to "<font color='white'>Sign in to Post on forum</font>".html_safe, new_user_session_path %>
             <% end %>
-          </div>
+          </button>
+          &nbsp;
         </th>
       </tr>
     </thead>
